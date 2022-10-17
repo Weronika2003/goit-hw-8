@@ -106,20 +106,25 @@ img {
   cursor: pointer;
 }
 
-.container {
-  max-width: 480px;
-  padding: 0 15px;
-  margin: 0 auto;
+@media (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
 }
-
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding: 0 15px;
+    margin: 0 auto;
   }
 }
 @media (min-width: 1200px) {
   .container {
     max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
   }
 }
 .section {
@@ -452,11 +457,7 @@ img {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    display: block;
   }
   .page-header__link {
     text-decoration: none;
