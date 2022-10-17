@@ -20,6 +20,11 @@
                 <li><a class="page-header__link page-header--studio page-header--studio-highlight" href="index.html">Agencja</a></li>
                 <li><a class="page-header__link page-header--portfolio" href="portfolio.html">Portfolio</a></li>
                 <li><a class="page-header__link page-header--contacts" href="index.html">Kontakt</a></li>
+                <li><button type="button" class="page-header__modal-menu" .js-open-menu>
+                    <svg class="page-header__modal-menu" width="24" height="16">
+                        <use href="./Images/icons.svg#icon-menu"></use>
+                    </svg>
+                </button></li>
             </ul>
         </nav>
         <ul class="page-header__list--contacts">
@@ -296,6 +301,35 @@
             </div>
         </div>
     </div>
+    <div class="backdrop is-hidden" .js-menu-container>
+        <div class="menu-modal">
+            <button type="button" class="menu-modal-close" .js-close-menu>
+                <svg class="menu-modal__icon--close" width="18.67" height="18.67">
+                    <use href="./Images/icons.svg#icon-close-mark"></use>
+                </svg>
+            </button>
+            <ul class="menu-modal__grid">
+                <li><a class="menu-modal--agency" href="">Agencja</a></li>
+                <li><a class="menu-modal--portfolio" href="">Portfolio</a></li>
+                <li><a class="menu-modal--contact" href="">Kontakt</a></li>
+            </ul>
+            <ul class="menu-modal__grid--contacts">
+                <li><a class="menu-modal__phone" href="tel:+48-111-111-111">+48 111 111 111</a></li>
+                <li><a class="menu-modal__mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+            <ul class="menu-modal__grid--media">
+                <li><a class="menu-modal__media" href="">Instagram</a></li>
+                <li><a class="menu-modal__media" href="">Facebook</a></li>
+                <li><a class="menu-modal__media" href="">Twitter</a></li>
+                <li><a class="menu-modal__media" href="">Linkedin</a></li>
+    
+            </ul>
+        </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
     </body>
     </html>
