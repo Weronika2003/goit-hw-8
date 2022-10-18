@@ -912,11 +912,11 @@ img {
 
 .main-web {
   background-color: rgba(47, 48, 58, 0.4);
-  background-image: url("../Images/background-zipped.jpg");
+  background-image: url("../Images/header-img.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 600px;
+  min-height: 400px;
   padding-top: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -938,6 +938,100 @@ img {
   border: none;
 }
 
+@media (min-width: 768px) {
+  .main-web {
+    background-color: rgba(47, 48, 58, 0.4);
+    background-image: url("../Images/header-img-tablet.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    padding-top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-web__btn {
+    width: 200px;
+    height: 50px;
+    border: none;
+  }
+}
+@media (min-width: 1200px) {
+  .main-web {
+    background-color: rgba(47, 48, 58, 0.4);
+    background-image: url("../Images/header-img-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1600px;
+    min-height: 600px;
+    padding-top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-web__btn {
+    width: 200px;
+    height: 50px;
+    border: none;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) and (min-width: 767px), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 767px), (min-width: 1200px) and (min-resolution: 192dpi) and (min-width: 767px), (min-width: 1200px) and (min-resolution: 2dppx) and (min-width: 767px) {
+  .main-web {
+    background-image: url("../Images/header-img-desktop@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) and (min-width: 768px), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), (min-width: 1200px) and (min-resolution: 192dpi) and (min-width: 768px), (min-width: 1200px) and (min-resolution: 2dppx) and (min-width: 768px) {
+  .main-web {
+    background-image: url("../Images/header-img-tablet@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), (min-width: 1200px) and (min-resolution: 192dpi) and (min-width: 1200px), (min-width: 1200px) and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .main-web {
+    background-image: url("../Images/header-img-desktop@2x.jpg");
+  }
+}
+/*
+.main-web {
+    background-color: $third-background-color;
+    background-image: url("../Images/background-zipped.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__btn {
+        width: 200px;
+        height: 50px;
+        border: none;
+    }
+}*/
 .cards--lorem {
   font-size: 14px;
   line-height: 1.7;
