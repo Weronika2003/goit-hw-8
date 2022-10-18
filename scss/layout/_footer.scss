@@ -136,6 +136,10 @@
         flex-direction: column;
         justify-content: center;
     }
+    &__btn{
+        justify-content: center;
+        display: flex;
+    }
 }
 }
 @media (min-width: 768px) and (max-width: 1199px){
@@ -266,6 +270,10 @@
         display: flex;
         gap: 12px;
     }
+          &__btn {
+              justify-content: center;
+              display: flex;
+          }
 
 }
 }
