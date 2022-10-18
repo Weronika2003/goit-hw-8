@@ -1741,10 +1741,13 @@ a .team__link {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 60px;
   }
   .footer__subscribe {
-    width: calc(100% - 15px);
+    width: calc(100vmin - 15px);
     min-height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1832,11 +1835,13 @@ a .team__link {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #2196F3;
-    width: 145px;
     padding-bottom: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-line-pack: center;
         align-content: center;
   }
@@ -1865,6 +1870,9 @@ a .team__link {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-line-pack: center;
         align-content: center;
   }
@@ -1874,7 +1882,6 @@ a .team__link {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    width: 231px;
     color: rgba(255, 255, 255, 0.6);
     padding-top: 9px;
     display: -webkit-box;
@@ -1884,6 +1891,9 @@ a .team__link {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-line-pack: center;
         align-content: center;
   }
