@@ -1,2 +1,2 @@
-GoIT-markup-hw-7
-https://weronika2003.github.io/goit-markup-hw-7/
+GoIT-markup-hw-8
+https://weronika2003.github.io/goit-hw-8/
