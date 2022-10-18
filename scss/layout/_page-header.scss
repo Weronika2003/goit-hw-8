@@ -8,6 +8,7 @@
         line-height: 1.14;
         display: flex;
         align-items: center;
+        justify-content: space-between;
         margin-right: 0;
 
         & .page-header--studio-highlight {
@@ -22,7 +23,8 @@
     }
         &__modal-menu {
             border: none;
-            background-color: $main-color;
+            background-color: none;
+            display: flex;
         }
 
     &__container {
