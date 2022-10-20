@@ -1,21 +1,24 @@
-.cards--lorem {
+.cards-lorem {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     display: block;
     color: $sec-font-color;
     padding-bottom: 0;
-    margin: 0 auto;
+    margin: 0;
    
 
     &__icon {
         background-color: $sec-background-color;
         border-radius: 4px;
+        flex-wrap: wrap;
         height: 120px;
         margin-bottom: 30px;
-        flex-basis: 100%;
+        width: 100%;
     }
-
+    &__svg{
+        margin-left: 191px;
+    }
     &__introduction {
         font-weight: 700;
         font-size: 14px;
@@ -27,31 +30,32 @@
         margin-bottom: 10px;
     }
 }
-@media (min-width: 768px){
-.cards--lorem {
+@media (min-width: 768px) and (max-width: 1199px){
+.cards-lorem {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: $sec-font-color;
     display: flex;
+    flex-direction: column;
     gap: 30px;
     justify-content: space-evenly;
     align-items: center;
     padding-bottom: 0;
     margin: 0 auto;
-    &__list{
-    flex-basis: calc(100% - 30px) / 2;
-    }
-
+    flex-basis: calc((100% - 30px) / 2);
+    flex-wrap: wrap;
+    
     &__icon {
         background-color: $sec-background-color;
         border-radius: 4px;
-        min-width: 270px;
+        width: 354px;
         height: 120px;
         margin-bottom: 30px;
-        flex-basis: calc(100% - 30px);
     }
-
+        &__svg {
+            margin-left: 143px;
+        }
     &__introduction {
         font-weight: 700;
         font-size: 14px;
@@ -65,7 +69,7 @@
 }
 }
 @media (min-width: 1200px){
-.cards--lorem {
+.cards-lorem {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -83,6 +87,10 @@
         width: 270px;
         height: 120px;
         margin-bottom: 30px;
+    }
+
+    &__svg {
+        margin-left: 100px;
     }
 
     &__introduction {

@@ -4,7 +4,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 450px;
+    max-width: 450px;
     min-height: 609px;
     background-color: $main-color;
     box-shadow: 0px 1px 3px $shadow-third-color, 0px 1px 1px $shadow-sec-color, 0px 2px 1px $shadow-background-color;
@@ -35,10 +35,11 @@
 
     &__input {
         margin-top: 4px;
-        width: 448px;
+        min-width: 370px;
         height: 40px;
         border: 1px solid $modal-border-color;
         border-radius: 4px;
+        
 
         &:focus {
             border-color: $link-color;
@@ -60,10 +61,10 @@
     &__comment {
         resize: none;
         font-size: 12px;
-        line-height: 1.17;
+        line-height: 1.1428;
         letter-spacing: 0.01em;
         color: $comment-color;
-        width: 448px;
+        min-width: 370px;
         height: 120px;
         border: 1px solid $modal-border-color;
         border-radius: 4px;
@@ -83,8 +84,8 @@
     }
 
     &__paragraph--regulations {
-        font-size: 14px;
-        line-height: 1.7;
+        font-size: 12px;
+        line-height: 1.857;
         letter-spacing: 0.03em;
         color: $sec-font-color;
         white-space: nowrap;
@@ -172,7 +173,7 @@
 
     &__input {
         margin-top: 4px;
-        width: 448px;
+        min-width: 370px;
         height: 40px;
         border: 1px solid $modal-border-color;
         border-radius: 4px;
@@ -197,10 +198,10 @@
     &__comment {
         resize: none;
         font-size: 12px;
-        line-height: 1.17;
+        line-height: 1.14;
         letter-spacing: 0.01em;
         color: $comment-color;
-        width: 448px;
+        min-width: 370px;
         height: 120px;
         border: 1px solid $modal-border-color;
         border-radius: 4px;
@@ -220,8 +221,8 @@
     }
 
     &__paragraph--regulations {
-        font-size: 14px;
-        line-height: 1.7;
+        font-size: 12px;
+        line-height: 1.167;
         letter-spacing: 0.03em;
         color: $sec-font-color;
         white-space: nowrap;

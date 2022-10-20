@@ -10,10 +10,12 @@
         justify-content: space-between;
         border: 1px solid $icons-color;
         border-radius: 4px;
-        width: 170px;
+        width: 210px;
         height: 92px;
     }
-
+    &__svg{
+        margin-left: 52px;
+    }
     &__link:hover svg,
     &__link:focus svg {
         outline: none;
@@ -24,7 +26,8 @@
 }
 @media (max-width: 767px){
     .clients__list{
-        flex-basis: calc(100% - 30px) / 2;
+        flex-basis: calc((100% - 30px) / 2);
+        flex-wrap: wrap;
     }
     
     /* czemu flex-basis nigdzie nie działa?*/
@@ -43,9 +46,12 @@
         justify-content: space-between;
         border: 1px solid $icons-color;
         border-radius: 4px;
-        width: 170px;
+        width: 226px;
         height: 92px;
     }
+    &__svg{
+        margin-left: 60px;
+    }  
 
     &__link:hover svg,
     &__link:focus svg {
@@ -53,6 +59,10 @@
         fill: $link-color;
         border-color: $link-color;
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .clients__list {
+        flex-basis: calc((100% - 30px) / 3);
+        flex-wrap: wrap;
     }
 }
 }

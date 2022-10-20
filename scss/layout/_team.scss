@@ -133,6 +133,8 @@ a .team__link {
         gap: 30px;
         align-items: center;
         justify-content: space-evenly;
+        flex-basis: calc((100% - 30px)/ 2);
+        flex-wrap: wrap;
     }
 
     &__label {
