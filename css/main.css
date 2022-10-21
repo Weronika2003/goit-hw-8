@@ -137,7 +137,7 @@ img {
 }
 @media (min-width: 768px) {
   .container {
-    max-width: 768px;
+    max-width: 738px;
     padding: 0 15px;
     margin: 0 auto;
   }
@@ -155,12 +155,12 @@ img {
 
 @media (min-width: 768px) {
   .section {
-    padding: 94px;
+    padding: 94px 0;
   }
 }
 @media (min-width: 1200px) {
   .section {
-    padding: 94px;
+    padding: 94px 0;
   }
 }
 .heading--first {
@@ -1584,6 +1584,7 @@ img {
   color: #757575;
   padding-bottom: 0;
   margin: 0;
+  gap: 30px;
 }
 .cards-lorem__icon {
   background-color: #F5F4FA;
@@ -1591,8 +1592,8 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 120px;
-  margin-bottom: 30px;
   width: 100%;
+  margin-bottom: 30px;
 }
 .cards-lorem__svg {
   margin-left: 191px;
@@ -1632,6 +1633,8 @@ img {
             align-items: center;
     padding-bottom: 0;
     margin: 0 auto;
+  }
+  .cards-lorem__list {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
     -ms-flex-wrap: wrap;
@@ -1657,6 +1660,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 30px;
     margin-bottom: 10px;
   }
 }
@@ -2118,6 +2122,11 @@ a .team__link {
         flex-basis: calc((100% - 30px) / 2);
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    gap: 30px;
+  }
+  .clients__card {
+    -ms-flex-preferred-size: calc(50% - 15px);
+        flex-basis: calc(50% - 15px);
   }
   /* czemu flex-basis nigdzie nie działa?*/
 }
@@ -2156,6 +2165,7 @@ a .team__link {
         flex-basis: calc((100% - 30px) / 3);
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    gap: 30px;
   }
 }
 @media (min-width: 1200px) {

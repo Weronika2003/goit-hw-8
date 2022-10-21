@@ -6,6 +6,7 @@
     color: $sec-font-color;
     padding-bottom: 0;
     margin: 0;
+    gap: 30px;
    
 
     &__icon {
@@ -13,9 +14,10 @@
         border-radius: 4px;
         flex-wrap: wrap;
         height: 120px;
-        margin-bottom: 30px;
         width: 100%;
+        margin-bottom: 30px;
     }
+   
     &__svg{
         margin-left: 191px;
     }
@@ -43,8 +45,10 @@
     align-items: center;
     padding-bottom: 0;
     margin: 0 auto;
-    flex-basis: calc((100% - 30px) / 2);
-    flex-wrap: wrap;
+   &__list{
+    flex-basis: calc((100% - 30px)/ 2);
+        flex-wrap: wrap;
+   }
     
     &__icon {
         background-color: $sec-background-color;
@@ -64,6 +68,7 @@
         color: $font-color;
         text-align: justify;
         display: flex;
+        margin-top: 30px;
         margin-bottom: 10px;
     }
 }
