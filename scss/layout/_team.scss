@@ -4,7 +4,7 @@ a .team__link {
 }
 .team {
     background: $sec-background-color;
-    min-height: 708px;
+    min-height: 622px;
 
     &__icon {
         background-size: contain;
@@ -49,6 +49,7 @@ a .team__link {
         align-items: center;
         justify-content: space-evenly;
     }
+    
 
     &__label {
         display: flex;
@@ -63,6 +64,7 @@ a .team__link {
         background-color: $main-color;
         box-shadow: 0px 1px 3px $shadow-third-color, 0px 1px 1px $shadow-sec-color, 0px 2px 1px $shadow-background-color;
         border-radius: 0px 0px 4px 4px;
+
     }
 
     &__name {
@@ -79,9 +81,21 @@ a .team__link {
     }
 }
 @media (max-width: 767px){
-    .team__cards{
+    .team{
+    &__cards{
         flex-direction: column;
     }
+    &__card{
+        width: 450px;
+    }
+    &__box{
+        width: 100%;
+    }
+    &__img{
+        min-width: 450px;
+        height: 622px;
+    }
+}
 }
 
 @media (min-width: 768px) and (max-width: 1199px){
