@@ -829,7 +829,19 @@ img {
   line-height: 1.175;
   letter-spacing: 0.02em;
 }
+.menu-modal__grid:hover, .menu-modal__grid:focus {
+  cursor: pointer;
+  color: #2196F3;
+}
 .menu-modal__grid--contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
   margin-bottom: 64px;
   color: #757575;
   font-weight: 500;
@@ -839,7 +851,7 @@ img {
   color: #757575;
 }
 .menu-modal__phone {
-  margin-bottom: 32px;
+  text-decoration: none;
   font-weight: 500;
   font-size: 34px;
   line-height: 1.176;
@@ -854,7 +866,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 .menu-modal__media {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
