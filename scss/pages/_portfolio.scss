@@ -66,7 +66,7 @@
             line-height: 1.88;
             letter-spacing: 0.03em;
             display: flex;
-
+            
             &:hover,
             &:focus {
                 box-shadow: 0px 1px 1px $shadow-third-color, 0px 4px 4px $shadow-sixth-color, 1px 4px 6px $shadow-seventh-color;
@@ -74,14 +74,15 @@
                 transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
             }
         }
-            &:hover &__text {
-                transform: translateX(0);
-            }
-        
-                 &__box {
-                     position: relative;
-                     overflow: hidden;
-                 }
+                &:hover &__text {
+                    transform: translateX(0);
+                }
+            
+
+        &__box {
+            position: relative;
+            overflow: hidden;
+        }
 
         &__text {
             position: absolute;
@@ -119,7 +120,7 @@
             height: 110px;
             padding: 20px 24px;
 
-            &__div {
+            &--div {
                 margin-top: 4px;
             }
         }
