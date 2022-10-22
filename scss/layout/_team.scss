@@ -79,21 +79,20 @@ a .team__link {
         margin-top: 30px;
         margin-bottom: 10px;
     }
+    &__img {
+        width: 100%;
+        height: auto;
+    }
 }
 @media (max-width: 767px){
     .team{
     &__cards{
         flex-direction: column;
     }
-    &__card{
-        width: 450px;
-    }
+   
     &__box{
         width: 100%;
-    }
-    &__img{
-        width: 100%;
-        height: auto;
+        width: 450px;
     }
 }
 }
@@ -102,7 +101,7 @@ a .team__link {
 .team {
     background: $sec-background-color;
     min-height: 708px;
-
+   
     &__icon {
         background-size: contain;
         fill: $icons-color;
@@ -141,16 +140,17 @@ a .team__link {
         font-size: 16px;
         line-height: 1.18;
         text-align: center;
+        width: 738px;
         letter-spacing: 0.03em;
         color: $sec-font-color;
         display: flex;
-        gap: 30px;
         align-items: center;
         justify-content: space-evenly;
-        flex-basis: calc((100% - 30px)/ 2);
+        flex-basis: calc((100% - 30px) / 2);
         flex-wrap: wrap;
+        gap: 30px;
     }
-
+ 
     &__label {
         display: flex;
         flex-direction: column;
@@ -164,6 +164,7 @@ a .team__link {
         background-color: $main-color;
         box-shadow: 0px 1px 3px $shadow-third-color, 0px 1px 1px $shadow-sec-color, 0px 2px 1px $shadow-background-color;
         border-radius: 0px 0px 4px 4px;
+        width: 354px;
     }
 
     &__name {
