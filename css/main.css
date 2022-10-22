@@ -2463,6 +2463,16 @@ a .team__link {
   .footer {
     background-color: #2F303A;
   }
+  .footer__div--tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 144px;
+  }
   .footer__logo {
     text-decoration: none;
     font-family: "Raleway";
@@ -2492,6 +2502,10 @@ a .team__link {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .footer__address {
     font-style: normal;
@@ -2502,6 +2516,7 @@ a .team__link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    text-align: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2537,6 +2552,9 @@ a .team__link {
     color: #2196F3;
     -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer__media {
+    text-align: center;
   }
   .footer__icon {
     display: -webkit-box;

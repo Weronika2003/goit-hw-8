@@ -145,6 +145,11 @@
 @media (min-width: 768px) and (max-width: 1199px){
 .footer {
     background-color: $background-color;
+    &__div--tablet{
+        display: flex;
+        flex-direction: row;
+        gap: 144px;
+    }
     
     &__logo {
         text-decoration: none;
@@ -168,6 +173,7 @@
         padding: 60px 15px;
         display: flex;
         justify-content: space-between;
+        flex-direction: column;
     }
 
     &__address {
@@ -177,6 +183,7 @@
         letter-spacing: 0.03em;
         color: $main-color;
         display: flex;
+        text-align: center;
         flex-direction: column;
         justify-content: center;
         align-content: center;
@@ -202,7 +209,9 @@
             transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
     }
-
+    &__media{
+        text-align: center;
+    }
 
     &__icon {
         display: flex;
