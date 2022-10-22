@@ -30,10 +30,7 @@
         flex-wrap: wrap;
         gap: 30px;
     }
-    .clients__card{
-        flex-basis: calc(50% - 15px);
-    }
-    
+  
 
 }
 @media (min-width: 768px) and (max-width: 1199px){
@@ -45,11 +42,11 @@
         flex-basis: calc((100% - 30px) / 3);
         flex-wrap: wrap;
     }
-
+ 
     &__icon {
         fill: $icons-color;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         border: 1px solid $icons-color;
         border-radius: 4px;
         width: 226px;

@@ -22,12 +22,21 @@
         }
     }
         &__modal-menu {
+            position: absolute;
+            top: 12px;
+            right: 35.33px;
             border: none;
             background-color: $main-color;
-            display: flex;
+            cursor: pointer;
+            &:hover,
+            &:focus{
+                fill: $link-color;
+                transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
         }
 
     &__container {
+        position: relative;
         padding: 24px 15px;
         display: flex;
         justify-content: space-between;
@@ -85,12 +94,12 @@
 
         &:hover,
         &:focus {
-            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             color: $link-color;
 
             & .page-header__icon {
                 fill: $link-color;
-                transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
             }
         }
     }
