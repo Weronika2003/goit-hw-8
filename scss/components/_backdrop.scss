@@ -9,6 +9,8 @@
  .is-open {
      visibility: visible;
      opacity: 100;
+     position: fixed;
+     top: 0;
      pointer-events: auto;
  }
  @media (min-width: 768px) and (max-width: 1199px){

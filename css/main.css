@@ -47,6 +47,8 @@ img {
 .is-open {
   visibility: visible;
   opacity: 100;
+  position: fixed;
+  top: 0;
   pointer-events: auto;
 }
 
@@ -1886,8 +1888,8 @@ a .team__link {
     width: 100%;
   }
   .team__img {
-    min-width: 450px;
-    height: 622px;
+    width: 100%;
+    height: auto;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -2865,7 +2867,7 @@ a .team__link {
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-img__link:hover .portfolio-img__link__text {
+.portfolio-img:hover .portfolio-img__text {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
