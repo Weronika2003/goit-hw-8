@@ -1,3 +1,4 @@
+@media (max-width: 767px){
 .cards-lorem {
     font-size: 14px;
     line-height: 1.7;
@@ -6,9 +7,8 @@
     color: $sec-font-color;
     padding-bottom: 0;
     margin: 0;
-    gap: 30px;
    
-
+  
     &__icon {
         background-color: $sec-background-color;
         border-radius: 4px;
@@ -21,16 +21,19 @@
     &__svg{
         margin-left: 191px;
     }
+   
     &__introduction {
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.03em;
         color: $font-color;
-        text-align: justify;
         display: flex;
         margin-bottom: 10px;
+        text-align: center;
     }
+    
+}
 }
 @media (min-width: 768px) and (max-width: 1199px){
 .cards-lorem {

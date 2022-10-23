@@ -1,151 +1,310 @@
-// .portfolio {
-//     &-btn {
-//         padding-bottom: 50px;
+@media (max-width: 767px){
+.portfolio-btn {
+    padding-bottom: 50px;
 
-//         &__box {
-//             color: $font-color;
-//             font-weight: 500;
-//             font-size: 16px;
-//             line-height: 1.63;
-//             letter-spacing: 0.03em;
-//             text-align: center;
-//             background-color: $sec-background-color;
-//             border-radius: 4px;
-//             border: none;
-//             height: 38px;
-//             margin-right: 8px;
-//             box-shadow: none;
 
-//             &--all {
-//                 width: 121px;
-//             }
+    &__box {
+        color: $font-color;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.63;
+        letter-spacing: 0.03em;
+        text-align: center;
+        background-color: $sec-background-color;
+        border-radius: 4px;
+        border: none;
+        height: 38px;
+        margin-right: 8px;
+        box-shadow: none;
 
-//             &--webs {
-//                 width: 93px;
-//             }
+        &--all {
+            width: 121px;
+        }
 
-//             &--apps {
-//                 width: 114px;
-//             }
+        &--webs {
+            width: 93px;
+        }
 
-//             &--design {
-//                 width: 91px;
-//             }
+        &--apps {
+            width: 114px;
+        }
 
-//             &--marketing {
-//                 width: 121px;
-//             }
+        &--design {
+            width: 91px;
+        }
 
-//             &:hover,
-//             &:focus {
-//                 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//                 cursor: pointer;
-//                 color: $main-color;
-//                 background-color: $link-color;
-//                 box-shadow: 0px 3px 1px $modal-btn-border-color, 0px 1px 2px $shadow-fifth-color, 0px 2px 2px $shadow-third-color;
-//             }
-//         }
+        &--marketing {
+            width: 121px;
+        }
 
-//         &__cards {
-//             display: flex;
-//             justify-content: center;
-//         }
-//     }
+        &:hover,
+        &:focus {
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            color: $main-color;
+            background: $link-color;
+            box-shadow: 0px 3px 1px $modal-btn-border-color, 0px 1px 2px $shadow-fifth-color, 0px 2px 2px $shadow-third-color;
+        }
+    }
 
-//     &-img {
-//         padding-top: 0;
+    &__cards {
+        display: flex;
+        justify-content: center;
+    }
+}
 
-//         &__link {
-//             position: relative;
-//             background-color: $main-color;
-//             text-decoration: none;
-//             width: 370px;
-//             height: 404px;
-//             color: $sec-font-color;
-//             font-size: 16px;
-//             line-height: 1.88;
-//             letter-spacing: 0.03em;
-//             display: flex;
-            
-//             &:hover,
-//             &:focus {
-//                 box-shadow: 0px 1px 1px $shadow-third-color, 0px 4px 4px $shadow-sixth-color, 1px 4px 6px $shadow-seventh-color;
-//                 cursor: pointer;
-//                 transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//             }
-//         }
-//                 &:hover &__text {
-//                     transform: translateX(0);
-//                 }
-            
+.portfolio-img {
+    padding-top: 0;
+    &--photo{
+        width: 100%;
+        height: auto;
+    }
+    &__card{
+        width: 450px;
+        height: 404px;
+    }
 
-//         &__box {
-//             position: relative;
-//             overflow: hidden;
-//         }
+    &__link {
+        position: relative;
+        background: $main-color;
+        text-decoration: none;
+        height: 404px;
+        color: $sec-font-color;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.03em;
+        display: flex;
+    }
 
-//         &__text {
-//             position: absolute;
-//             width: 100%;
-//             height: 100%;
-//             top: 0;
-//             left: 0;
-//             background-color: $link-light-color;
-//             transform: translateY(100%);
-//             transition: 400ms cubic-bezier(0.4, 0, 0.2, 1);
-//             animation-timing-function: ease-in-out;
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px $shadow-third-color, 0px 4px 4px $shadow-sixth-color, 1px 4px 6px $shadow-seventh-color;
+        cursor: pointer;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-//             &>p {
-//                 font-size: 18px;
-//                 line-height: 28px;
-//                 letter-spacing: 0.03em;
-//                 color: $main-color;
-//                 line-height: 1.6;
-//                 padding: 49px 45px 49px 24px;
-//             }
-//         }
+    &__label--div {
+        margin-top: 4px;
+    }
 
-//         &__grid {
-//             display: flex;
-//             flex-wrap: wrap;
-//             gap: 30px;
-//         }
+    &__box {
+        position: relative;
+        overflow: hidden;
+    }
 
-//         &__label {
-//             display: flex;
-//             flex-direction: column;
-//             border-bottom: 1px solid $portfolio-box-color;
-//             border-right: 1px solid $portfolio-box-color;
-//             border-left: 1px solid $portfolio-box-color;
-//             height: 110px;
-//             padding: 20px 24px;
+    &__box:hover &__text {
+        transform: translateX(0);
+    }
 
-//             &--div {
-//                 margin-top: 4px;
-//             }
-//         }
+    &__text {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: $link-light-color;
+        transform: translateY(100%);
+        transition: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+        animation-timing-function: ease-in-out;
 
-//         &__strong {
-//             font-weight: 700;
-//             font-size: 18px;
-//             line-height: 2;
-//             letter-spacing: 0.06em;
-//             color: $font-color;
-//         }
-//     }
-// }
+    }
+
+    &__text>p {
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        color: $main-color;
+        line-height: 1.6;
+        padding: 49px 45px 49px 24px;
+    }
+
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__label {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid $portfolio-box-color;
+        border-right: 1px solid $portfolio-box-color;
+        border-left: 1px solid $portfolio-box-color;
+        height: 110px;
+        padding: 20px 24px;
+    }
+
+    &__strong {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: $font-color;
+    }
+}
+}
+@media (min-width: 768px) and (max-width: 1199px){
+.portfolio-btn {
+    padding-bottom: 50px;
+  
+
+    &__box {
+        color: $font-color;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.63;
+        letter-spacing: 0.03em;
+        text-align: center;
+        background-color: $sec-background-color;
+        border-radius: 4px;
+        border: none;
+        height: 38px;
+        margin-right: 8px;
+        box-shadow: none;
+
+        &--all {
+            width: 121px;
+        }
+
+        &--webs {
+            width: 93px;
+        }
+
+        &--apps {
+            width: 114px;
+        }
+
+        &--design {
+            width: 91px;
+        }
+
+        &--marketing {
+            width: 121px;
+        }
+
+        &:hover,
+        &:focus {
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            color: $main-color;
+            background: $link-color;
+            box-shadow: 0px 3px 1px $modal-btn-border-color, 0px 1px 2px $shadow-fifth-color, 0px 2px 2px $shadow-third-color;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.portfolio-img {
+    padding-top: 0;
+    
+&--photo {
+        width: 100%;
+        height: auto;
+    }
+
+    &__card {
+        width: 354px;
+        height: 440px;
+    }
+    &__link {
+        position: relative;
+        background: $main-color;
+        text-decoration: none;
+        width: 370px;
+        height: 404px;
+        color: $sec-font-color;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.03em;
+        display: flex;
+    }
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px $shadow-third-color, 0px 4px 4px $shadow-sixth-color, 1px 4px 6px $shadow-seventh-color;
+        cursor: pointer;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__label--div {
+        margin-top: 4px;
+    }
+
+    &__box {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__box:hover &__text {
+        transform: translateX(0);
+    }
+
+    &__text {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: $link-light-color;
+        transform: translateY(100%);
+        transition: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+        animation-timing-function: ease-in-out;
+
+    }
+
+    &__text>p {
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        color: $main-color;
+        line-height: 1.6;
+        padding: 49px 45px 49px 24px;
+    }
+
+    &__grid {
+        width: 738px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        flex-basis: calc((100% - 30px)/ 2);
+    }
+
+    &__label {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid $portfolio-box-color;
+        border-right: 1px solid $portfolio-box-color;
+        border-left: 1px solid $portfolio-box-color;
+        height: 110px;
+        padding: 20px 24px;
+    }
+
+    &__strong {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: $font-color;
+    }
+}
+}
+@media (min-width: 1200px) {
 .portfolio-btn {
     padding-bottom: 50px;
 
 
 &__box {
-    color: #212121;
+    color: $font-color;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
     letter-spacing: 0.03em;
     text-align: center;
-    background-color: #F5F4FA;
+    background-color: $sec-background-color;
     border-radius: 4px;
     border: none;
     height: 38px;
@@ -176,9 +335,9 @@
 &:focus {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
-    color: #FFFFFF;
-    background: #2196F3;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: $main-color;
+    background: $link-color;
+    box-shadow: 0px 3px 1px $modal-btn-border-color, 0px 1px 2px $shadow-fifth-color, 0px 2px 2px $shadow-third-color;
 }
 }
 
@@ -191,11 +350,11 @@
     padding-top: 0;
 &__link {
     position: relative;
-    background: #FFFFFF;
+    background: $main-color;
     text-decoration: none;
     width: 370px;
     height: 404px;
-    color: #757575;
+    color: $sec-font-color;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
@@ -204,7 +363,7 @@
 
 &:hover,
 &:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 1px $shadow-third-color, 0px 4px 4px $shadow-sixth-color, 1px 4px 6px $shadow-seventh-color;
     cursor: pointer;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -218,56 +377,54 @@
     overflow: hidden;
 }
 
-.img-apps-and-webs:hover .portfolio-animation-text {
+&__box:hover &__text {
     transform: translateX(0);
 }
 
-.portfolio-animation-text {
+&__text {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(33, 150, 243, 0.9);
+    background-color: $link-light-color;
     transform: translateY(100%);
     transition: 400ms cubic-bezier(0.4, 0, 0.2, 1);
     animation-timing-function: ease-in-out;
 
 }
 
-.portfolio-animation-text>p {
+&__text>p {
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: $main-color;
     line-height: 1.6;
     padding: 49px 45px 49px 24px;
 }
 
-.portfolio-images {
+&__grid {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.portfolio-box {
+&__label {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
-    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid $portfolio-box-color;
+    border-right: 1px solid $portfolio-box-color;
+    border-left: 1px solid $portfolio-box-color;
     height: 110px;
     padding: 20px 24px;
 }
 
-img {
-    display: block;
-}
-
-.portfolio-text {
+&__strong {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: $font-color;
+}
+}
 }
