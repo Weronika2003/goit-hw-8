@@ -3121,19 +3121,19 @@ a .team__link {
             box-shadow: none;
   }
   .portfolio-btn__box--all {
-    width: 121px;
+    width: 103.34px;
   }
   .portfolio-btn__box--webs {
-    width: 93px;
+    width: 128px;
   }
   .portfolio-btn__box--apps {
-    width: 114px;
+    width: 145px;
   }
   .portfolio-btn__box--design {
-    width: 91px;
+    width: 103px;
   }
   .portfolio-btn__box--marketing {
-    width: 121px;
+    width: 130px;
   }
   .portfolio-btn__box:hover, .portfolio-btn__box:focus {
     -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -3303,6 +3303,10 @@ a .team__link {
   }
   .portfolio-img {
     padding-top: 0;
+  }
+  .portfolio-img--photo {
+    width: 100%;
+    height: auto;
   }
   .portfolio-img__link {
     position: relative;

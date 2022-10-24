@@ -167,23 +167,23 @@
         box-shadow: none;
 
         &--all {
-            width: 121px;
+            width: 103.34px;
         }
 
         &--webs {
-            width: 93px;
+            width: 128px;
         }
 
         &--apps {
-            width: 114px;
+            width: 145px;
         }
 
         &--design {
-            width: 91px;
+            width: 103px;
         }
 
         &--marketing {
-            width: 121px;
+            width: 130px;
         }
 
         &:hover,
@@ -353,6 +353,12 @@
 }
 .portfolio-img {
     padding-top: 0;
+
+&--photo {
+    width: 100%;
+    height: auto;
+}
+
 &__link {
     position: relative;
     background: $main-color;
