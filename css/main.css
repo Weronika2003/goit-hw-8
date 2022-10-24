@@ -3156,8 +3156,8 @@ a .team__link {
     padding-top: 0;
   }
   .portfolio-img--photo {
-    width: 100%;
-    height: auto;
+    width: 354px;
+    height: 294px;
   }
   .portfolio-img__card {
     width: 354px;
@@ -3167,8 +3167,8 @@ a .team__link {
     position: relative;
     background: #FFFFFF;
     text-decoration: none;
-    width: 370px;
-    height: 404px;
+    width: 354px;
+    height: 440px;
     color: #757575;
     font-size: 16px;
     line-height: 1.88;
@@ -3176,6 +3176,9 @@ a .team__link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .portfolio-img:hover, .portfolio-img:focus {
     -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -3239,7 +3242,7 @@ a .team__link {
     border-bottom: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
-    height: 110px;
+    height: 146px;
     padding: 20px 24px;
   }
   .portfolio-img__strong {

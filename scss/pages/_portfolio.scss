@@ -206,8 +206,8 @@
     padding-top: 0;
     
 &--photo {
-        width: 100%;
-        height: auto;
+        width: 354px;
+        height: 294px;
     }
 
     &__card {
@@ -218,13 +218,15 @@
         position: relative;
         background: $main-color;
         text-decoration: none;
-        width: 370px;
-        height: 404px;
+        width: 354px;
+        height: 440px;
         color: $sec-font-color;
         font-size: 16px;
         line-height: 1.88;
         letter-spacing: 0.03em;
         display: flex;
+        justify-content: center;
+
     }
 
     &:hover,
@@ -284,7 +286,7 @@
         border-bottom: 1px solid $portfolio-box-color;
         border-right: 1px solid $portfolio-box-color;
         border-left: 1px solid $portfolio-box-color;
-        height: 110px;
+        height: 146px;
         padding: 20px 24px;
     }
 
