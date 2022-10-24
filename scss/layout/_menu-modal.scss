@@ -36,6 +36,7 @@
             fill: $link-color;
         }
     }
+  
 
     &__grid {
         display: flex;
@@ -102,4 +103,12 @@
     &--no-border {
         border: none;
     }
+
+   &--agency-highlight {
+       color: $link-color;
+   }
+
+   &--portfolio-highlight {
+       color: $link-color;
+   }
 }

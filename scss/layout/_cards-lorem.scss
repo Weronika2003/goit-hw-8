@@ -1,15 +1,25 @@
 @media (max-width: 767px){
 .cards-lorem {
+    padding-left: 0;
+    padding-right: 0;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
     color: $sec-font-color;
     padding-bottom: 0;
     margin: 0;
    
+    &__icon{
+        height: 70px;
+        width: 100%;
+        margin: 25px auto;
+    }
   
-    &__icon {
+    &__div{
         background-color: $sec-background-color;
         border-radius: 4px;
         flex-wrap: wrap;
@@ -18,9 +28,6 @@
         margin-bottom: 30px;
     }
    
-    &__svg{
-        margin-left: 191px;
-    }
    
     &__introduction {
         font-weight: 700;
@@ -28,9 +35,10 @@
         line-height: 1.14;
         letter-spacing: 0.03em;
         color: $font-color;
-        display: flex;
-        margin-bottom: 10px;
+        display: block;
         text-align: center;
+        margin-bottom: 10px;
+        
     }
     
 }
@@ -51,21 +59,24 @@
     flex-basis: calc((100% - 30px) / 2);
     flex-wrap: wrap;
 
+    &__icon{
+        height: 70px;
+        width: 100%;
+        margin: 25px auto;
+    }
    &__list{
     gap: 30px;
     width: 354px;
    }
     
-    &__icon {
+    &__div {
         background-color: $sec-background-color;
         border-radius: 4px;
         width: 100%;
         height: 120px;
         margin-bottom: 30px;
     }
-        &__svg {
-            margin-left: 143px;
-        }
+        
     &__introduction {
         font-weight: 700;
         font-size: 14px;
@@ -86,13 +97,17 @@
     letter-spacing: 0.03em;
     color: $sec-font-color;
     display: flex;
-    justify-content: space-evenly;
     gap: 30px;
     align-items: center;
     padding-bottom: 0;
     margin: 0 auto;
 
-    &__icon {
+    &__icon{
+        height: 70px;
+        width: 100%;
+        margin: 25px auto;
+    }
+    &__div{
         background-color: $sec-background-color;
         border-radius: 4px;
         width: 270px;
@@ -100,9 +115,6 @@
         margin-bottom: 30px;
     }
 
-    &__svg {
-        margin-left: 100px;
-    }
 
     &__introduction {
         font-weight: 700;

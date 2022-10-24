@@ -159,7 +159,6 @@
         line-height: 1.14;
         display: flex;
         align-items: center;
-        margin-right: 60px;
 
         & .page-header--studio-highlight {
             color: $link-color;
@@ -174,7 +173,8 @@
     }
 
     &__container {
-        padding: 24px 15px;
+        width: 738px;
+        padding: 24px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -216,6 +216,7 @@
         font-weight: 500;
         line-height: 1.14;
         display: block;
+    
     }
 
 

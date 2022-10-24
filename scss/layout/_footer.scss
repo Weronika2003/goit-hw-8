@@ -147,6 +147,7 @@
     background-color: $background-color;
     &__div--tablet{
         display: flex;
+        justify-content: center;
         flex-direction: row;
         gap: 144px;
     }
@@ -251,12 +252,12 @@
     }
 
     &__newsletter{
-        text-align: center;
         display: flex;
         justify-content: center;
         align-content: center;
         flex-direction: column;
         margin-top: 60px;
+        text-align: center;
     }
     &__subscribe {
         width: 450px;
@@ -265,7 +266,6 @@
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
         background-color: $background-color;
-        ;
 
         &:focus {
             border-color: $link-color;
@@ -289,8 +289,9 @@
         gap: 12px;
     }
           &__btn {
-              justify-content: center;
-              display: flex;
+            justify-content: center;
+            display: flex;
+            margin: 0 auto;
           }
 
 }
