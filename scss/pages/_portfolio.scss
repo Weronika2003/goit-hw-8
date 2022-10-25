@@ -1,6 +1,6 @@
 @media (max-width: 767px){
 .portfolio-btn {
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 
 
     &__box {
@@ -62,7 +62,7 @@
         height: auto;
     }
     &__card{
-        width: 450px;
+        width: 465px;
         height: 404px;
     }
 
@@ -149,7 +149,7 @@
 }
 @media (min-width: 768px) and (max-width: 1199px){
 .portfolio-btn {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   
 
     &__box {
@@ -410,7 +410,7 @@
 
 &__text>p {
     font-size: 18px;
-    line-height: 28px;
+    line-height: 1.556;
     letter-spacing: 0.03em;
     color: $main-color;
     line-height: 1.6;
