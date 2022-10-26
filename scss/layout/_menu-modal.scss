@@ -4,7 +4,7 @@
     padding: 48px 40px;
     max-width: 767px;
     width: 100vmin;
-    height: 100vmax;
+    height: 100%;
     background-color: $main-color;
 
     &__link {
@@ -86,6 +86,7 @@
 
     &__grid--media {
         display: flex;
+        flex-wrap: wrap;
         gap: 10px;
     }
 

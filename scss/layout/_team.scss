@@ -92,7 +92,8 @@ a .team__link {
    
     &__box{
         width: 100%;
-        width: 450px;
+        width: calc(100vmin - 15px);
+        max-width: 450px;
     }
 }
 }
