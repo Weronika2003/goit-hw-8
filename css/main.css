@@ -142,13 +142,12 @@ img {
   cursor: pointer;
 }
 
-@media (min-width: 480px) {
-  .container {
-    max-width: 480px;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
+.container {
+  max-width: 480px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
+
 @media (min-width: 768px) {
   .container {
     max-width: 738px;
@@ -366,7 +365,7 @@ img {
   }
   .page-header__container {
     position: relative;
-    padding: 24px 15px;
+    width: calc(100vmin - 15px);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -841,13 +840,13 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 32px;
-  margin-bottom: 302px;
+  margin-bottom: 39.8%;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 40px;
   line-height: 1.175;
   letter-spacing: 0.02em;
+  gap: 32px;
 }
 .menu-modal__grid--contacts {
   display: -webkit-box;
@@ -857,14 +856,14 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 32px;
-  margin-bottom: 64px;
+  gap: 4.16vmax;
   color: #757575;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.167;
   letter-spacing: 0.02em;
   color: #757575;
+  margin-bottom: 64px;
 }
 .menu-modal__phone {
   text-decoration: none;
@@ -1201,6 +1200,7 @@ img {
     letter-spacing: 0.03em;
     color: #757575;
     white-space: nowrap;
+    cursor: pointer;
   }
   .modal__paragraph--regulations::before {
     content: "";
@@ -1364,6 +1364,7 @@ img {
     letter-spacing: 0.03em;
     color: #757575;
     white-space: nowrap;
+    cursor: pointer;
   }
   .modal__paragraph--regulations::before {
     content: "";
@@ -2214,6 +2215,8 @@ a .team__link {
     margin: 0 auto;
     -ms-flex-preferred-size: calc(50% - 15px);
         flex-basis: calc(50% - 15px);
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .clients__svg {
     fill: #AFB1B8;
@@ -2229,9 +2232,9 @@ a .team__link {
             justify-content: space-between;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    width: 210px;
+    max-width: 210px;
     height: 92px;
-    padding: 16px 32px;
+    padding: 16px 0;
   }
   .clients__link:hover svg, .clients__link:focus svg {
     outline: none;
@@ -2437,6 +2440,8 @@ a .team__link {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .footer__newsletter {
     display: -webkit-box;

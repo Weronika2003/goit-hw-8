@@ -230,6 +230,7 @@
         letter-spacing: 0.03em;
         color: $sec-font-color;
         white-space: nowrap;
+        cursor: pointer;
 
         &::before {
             content: "";
@@ -239,6 +240,7 @@
             border: 1px solid $font-color;
             border-radius: 2px;
             margin-right: 7px;
+
 
 
             .modal--policy-regulations:checked+& {
@@ -366,6 +368,7 @@
         letter-spacing: 0.03em;
         color: $sec-font-color;
         white-space: nowrap;
+        cursor: pointer;
 
         &::before {
             content: "";

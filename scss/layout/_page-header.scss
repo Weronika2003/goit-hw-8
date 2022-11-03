@@ -38,7 +38,8 @@
 
     &__container {
         position: relative;
-        padding: 24px 15px;
+        width: calc(100vmin - 15px);
+        //padding: 24px 15px;
         display: flex;
         justify-content: space-between;
         align-items: center;

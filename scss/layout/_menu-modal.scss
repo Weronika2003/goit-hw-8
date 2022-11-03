@@ -6,6 +6,7 @@
     width: 100vmin;
     height: 100%;
     background-color: $main-color;
+   
 
     &__link {
         text-decoration: none;
@@ -41,27 +42,26 @@
     &__grid {
         display: flex;
         flex-direction: column;
-        gap: 32px;
-        margin-bottom: 302px;
+        margin-bottom: 39.8%;
         font-family: $main-font;
         font-weight: 500;
         font-size: 40px;
         line-height: 1.175;
         letter-spacing: 0.02em;
-
+        gap: 32px;
     }
 
     &__grid--contacts {
         display: flex;
         flex-direction: column;
-        gap: 32px;
-        margin-bottom: 64px;
+        gap: 4.16vmax;
         color: $sec-font-color;
         font-weight: 500;
         font-size: 24px;
         line-height: 1.167;
         letter-spacing: 0.02em;
         color: $sec-font-color;
+        margin-bottom: 64px;
     }
 
     &__phone {
